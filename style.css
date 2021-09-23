@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media(max-width:1250px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+.flexy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    padding: 30px 0;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+@media(max-width:760px) {
+    nav ul {
+        display: none;
+    }
+}
+
+nav li {
+    margin-left: 35px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #545454;
+    letter-spacing: 0.06em;
+}
+
+.slogan {
+    font: 400 13px Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+nav a {
+    font: 400 15px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #545454;
+    display: block;
+    padding-bottom: 4px;
+}
+
+.active {
+    border-bottom: 3px #F1CDB3 solid;
+}
+
+.menu {
+    display: none;
+}
+
+@media(max-width:760px) {
+    .menu {
+        display: block;
+        margin-right: 40px;
+    }
+}
+
+main {
+    padding: 80px 0 100px;
+    background-color: #F6F6F6;
+}
+
+.pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+@media(max-width:1250px) {
+    .pets {
+        justify-content: center;
+    }
+}
+
+.pets-card {
+    background-color: #FAFAFA;
+    flex-basis: 270;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@media(max-width:1250px) {
+    .pets-card {
+        margin: 0 20px 30px;
+    }
+}
+
+.pets-card p {
+    margin: 30px 0;
+    letter-spacing: 0.06em;
+    font-size: 20px;
+    color: #545454;
+}
+
+.learn-more {
+    display: inline-block;
+    border: #F1CDB3 solid 2px;
+    padding: 15px 45px;
+    font-size: 17px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #292929;
+    letter-spacing: 0.06em;
+}
+
+h1 {
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+@media(max-width:600px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.pets-nav {
+    width: 340px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pets-nav-button {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.pets-nav .disabled {
+    color: #CDCDCD;
+    border: #CDCDCD 2px solid;
+}
+
+.pets-nav .active-page {
+    background-color: #F1CDB3;
+    color: #292929;
+    border: #F1CDB3 2px solid;
+}
+
+.pets-nav .active-nav {
+    color: #292929;
+    border: #F1CDB3 2px solid;
+}
+
+footer {
+    background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding-top: 40px;
+    text-decoration: none;
+}
+
+.flexy-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1250px) {
+    .flexy-footer {
+        justify-content: center;
+    }
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    padding-top: 16px;
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+
+footer .flexy-footer {
+    align-items: flex-start;
+}
+
+footer .flexy-footer>div {
+    width: 300px;
+}
+
+@media(max-width:1250px) {
+    footer .flexy-footer>div {
+        margin: 0 30px 60px;
+    }
+    footer .flexy-footer>div:last-child {
+        margin: 0 30px;
+        align-self: flex-end;
+    }
+}
+@media(max-width:760px) {
+    footer .flexy-footer>div {
+        margin: 0 30px;
+    }
+    footer .flexy-footer>div:last-child {
+        margin: 40px 30px 0;
+       
+        }
+    }
+
+    
+    footer p {
+        min-height: 46px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        color: #F1CDB3;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+        margin-bottom: 27px;
+    }
+    footer a {
+        color: #F1CDB3;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+    }
+    footer .email {
+        background: url(images/icon-email.svg) no-repeat left center;
+    }
+    footer .tel {
+        background: url(images/icon-phone.svg) no-repeat left center;
+    }
+    footer .local {
+        background: url(images/icon-marker.svg) no-repeat left center;
+        padding-left: 42px;
+    }
